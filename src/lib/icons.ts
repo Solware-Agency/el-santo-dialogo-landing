@@ -33,6 +33,10 @@ export const ICONS = {
   Youtube,
   Menu,
   X,
+  Image,
+  FileText,
+  HandHeart,
+  Users
 } as const;
 
 export type IconName = keyof typeof ICONS;
