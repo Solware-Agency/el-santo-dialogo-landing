@@ -2,57 +2,57 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+/* José Gregorio Hernández Landing Page Design System */
 
 @layer base {
+  /* Font Face - Clash Display from Supabase */
+  @font-face {
+    font-family: 'Clash Display';
+    src: url('https://lafysstpyiejevhrlmzc.supabase.co/storage/v1/object/public/fonts/Ideografiko_jose_gregorio/ClashDisplay-Regular.otf') format('opentype');
+    font-weight: 400;
+    font-display: swap;
+  }
+
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
-
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
-
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
-
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
-
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
-
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
-
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
-
+    /* José Gregorio Hernández Color Palette */
+    --background: 44 100% 95%;           /* Beige base #fdf6e3 */
+    --foreground: 231 48% 48%;           /* Deep blue for text */
+    
+    --card: 44 100% 95%;                 /* Beige base for cards */
+    --card-foreground: 231 48% 48%;      /* Deep blue text on cards */
+    
+    --popover: 44 100% 95%;
+    --popover-foreground: 231 48% 48%;
+    
+    --primary: 231 73% 35%;              /* Deep blue #2d2e83 */
+    --primary-foreground: 44 100% 95%;   /* Beige text on primary */
+    
+    --secondary: 210 51% 58%;            /* Mid blue #376fb6 */
+    --secondary-foreground: 44 100% 95%; /* Beige text on secondary */
+    
+    --muted: 44 40% 85%;                 /* Lighter beige for muted elements */
+    --muted-foreground: 231 48% 48%;     /* Deep blue text on muted */
+    
+    --accent: 50 100% 65%;               /* Accent gold #fcd400 */
+    --accent-foreground: 231 48% 48%;    /* Deep blue text on accent */
+    
+    --accent-light: 52 100% 76%;         /* Light gold tint #fee589 */
+    
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
-
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
-
-    --radius: 0.5rem;
-
-    --sidebar-background: 0 0% 98%;
-
-    --sidebar-foreground: 240 5.3% 26.1%;
-
-    --sidebar-primary: 240 5.9% 10%;
-
-    --sidebar-primary-foreground: 0 0% 98%;
-
-    --sidebar-accent: 240 4.8% 95.9%;
-
-    --sidebar-accent-foreground: 240 5.9% 10%;
-
-    --sidebar-border: 220 13% 91%;
-
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --destructive-foreground: 44 100% 95%;
+    
+    --border: 44 30% 80%;                /* Subtle beige border */
+    --input: 44 30% 80%;
+    --ring: 231 73% 35%;                 /* Primary blue for focus rings */
+    
+    --radius: 0.75rem;                   /* Default rounded-xl */
+    
+    /* Custom design tokens */
+    --gradient-primary: linear-gradient(135deg, hsl(231 73% 35%), hsl(210 51% 58%));
+    --gradient-accent: linear-gradient(135deg, hsl(50 100% 65%), hsl(52 100% 76%));
+    --shadow-elegant: 0 10px 30px -10px hsl(231 73% 35% / 0.15);
+    --shadow-glow: 0 0 40px hsl(50 100% 65% / 0.2);
+    --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   .dark {
