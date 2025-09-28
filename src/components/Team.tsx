@@ -2,7 +2,39 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { FadeIn } from "./FadeIn";
 import { content } from "@/content";
 
+// Role precedence (highest to lowest priority)
+const ROLE_PRECEDENCE = [
+  "Conceptualización y Producción General",
+  "Textos", 
+  "Museografía y Diseño",
+  "Comunicaciones",
+  "Edición y Community Management",
+  "Planificación de Contenido"
+];
+
+// De-duplicate team members at render time
+const deduplicateTeamMembers = (teamData: typeof content.team) => {
+  const assignedPeople = new Set<string>();
+  
+  return teamData.map(teamSection => {
+    const availablePeople = teamSection.people.filter(person => {
+      if (assignedPeople.has(person)) {
+        return false; // Person already assigned to higher precedence role
+      }
+      assignedPeople.add(person);
+      return true;
+    });
+    
+    return {
+      ...teamSection,
+      people: availablePeople.length > 0 ? availablePeople : ["—"]
+    };
+  });
+};
+
 export const Team = () => {
+  const deduplicatedTeam = deduplicateTeamMembers(content.team);
+
   return (
     <section className="py-20 bg-background">
       <div className="container mx-auto px-4 max-w-6xl">
@@ -18,7 +50,7 @@ export const Team = () => {
         </FadeIn>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {content.team.map((teamSection, index) => (
+          {deduplicatedTeam.map((teamSection, index) => (
             <FadeIn key={teamSection.role} delay={index * 0.1}>
               <Card className="h-full rounded-xl shadow-sm border-border/50 bg-card">
                 <CardHeader>
