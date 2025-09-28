@@ -8,7 +8,8 @@ import { BREAKPOINT_CLASSES, ANIMATION_DELAYS } from "@/constants";
 
 export const VenueDates = () => {
   return (
-    <Section className="max-w-4xl">
+    <Section>
+      <div className="max-w-4xl mx-auto">
         <FadeIn>
           <SectionHeader 
             title="Información de la Exposición"
@@ -42,6 +43,7 @@ export const VenueDates = () => {
             </Card>
           </FadeIn>
         </div>
+      </div>
     </Section>
   );
 };
