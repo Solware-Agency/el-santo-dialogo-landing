@@ -85,7 +85,7 @@ export const content = {
 
   impact: {
     summary:
-      "Una muestra para todos los públicos que une memoria, devoción y educación; pensada para entender —sin tecnicismos— la vida y el legado del Médico de los Pobres.",
+      "Una muestra para todos los públicos que une memoria, devoción y educación; pensada para entender —sin tecnicismos— la vida y el legado del Médico de los Pobres. Mayor afluencia prevista en torno a las celebraciones en la Parroquia La Candelaria.",
     stats: [
       { label: "Visitantes semanales (estimado)", value: "—" },
       { label: "Semana pico (estimado)", value: "—" }
