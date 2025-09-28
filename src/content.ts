@@ -79,8 +79,8 @@ export const content = {
 
   venueDates: {
     location: "Parroquia La Candelaria, Caracas",
-    opening: "TBD",
-    duration: "TBD"
+    opening: "Finales de octubre de 2025",
+    duration: "3 meses"
   },
 
   impact: {
