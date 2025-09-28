@@ -8,7 +8,7 @@ const ROLE_PRECEDENCE = [
   "Textos", 
   "Museografía y Diseño",
   "Comunicaciones",
-  "Edición y Community Management",
+  "Community Management",
   "Planificación de Contenido"
 ];
 

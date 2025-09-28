@@ -97,7 +97,7 @@ export const content = {
     { role: "Textos", people: ["Padre Gerardino Barracchini", "Eva Mendoza", "Valentina Sosa"] },
     { role: "Museografía y Diseño", people: ["Juan Carlos Hernández", "Eva Mendoza", "Valentina Sosa"] },
     { role: "Comunicaciones", people: ["Rubén Darío Hernández"] },
-    { role: "Edición y Community Management", people: ["Juan Diego Hernández"] },
+    { role: "Community Management", people: ["Juan Diego Hernández"] },
     { role: "Planificación de Contenido", people: ["Sharon"] }
   ],
 
