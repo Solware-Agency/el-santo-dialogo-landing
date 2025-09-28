@@ -15,7 +15,7 @@ export const DonateTab = ({
   phone = "584141234567",
   text = "Hola, estoy interesado y me gustaría contribuir con el proyecto.",
   side = "right",
-  labelDesktop = "HACER UNA DONACIÓN",
+  labelDesktop = "DONACIÓN",
 }: DonateTabProps) => {
   // Don't render if no phone number
   if (!phone) return null;
@@ -33,7 +33,7 @@ export const DonateTab = ({
         href={whatsappUrl}
         target="_blank"
         rel="noopener noreferrer"
-        aria-label="Hacer una donación por WhatsApp"
+        aria-label="Donar por WhatsApp"
         className="flex items-center justify-center bg-accent hover:brightness-110 text-primary rounded-2xl shadow-lg w-12 sm:w-14 transition-smooth focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 focus:ring-offset-background py-3 px-2 sm:py-4 sm:px-3 overflow-visible min-h-[44px] max-h-[35vh] sm:max-h-[30vh]"
         style={{ minTouchTarget: '44px' }}
       >
