@@ -16,7 +16,8 @@ import {
   Image,
   FileText,
   HandHeart,
-  Users
+  Users,
+  Code2
 } from "lucide-react";
 
 export const ICONS = {
@@ -36,7 +37,8 @@ export const ICONS = {
   Image,
   FileText,
   HandHeart,
-  Users
+  Users,
+  Code2
 } as const;
 
 export type IconName = keyof typeof ICONS;
