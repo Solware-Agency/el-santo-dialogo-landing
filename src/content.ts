@@ -114,6 +114,6 @@ export const content = {
   },
 
   footer: {
-    attributionHtml: "Landing developed by <a href=\"https://www.solware.agency\" target=\"_blank\" rel=\"noopener noreferrer\">Solware</a>."
+    attributionHtml: "Landing desarrollado por <a href=\"https://www.solware.agency\" target=\"_blank\" rel=\"noopener noreferrer\"><strong>Solware</strong></a>."
   }
 };
