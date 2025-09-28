@@ -12,7 +12,11 @@ import {
   Facebook, 
   Youtube,
   Menu,
-  X
+  X,
+  Image,
+  FileText,
+  HandHeart,
+  Users
 } from "lucide-react";
 
 export const ICONS = {

@@ -5,8 +5,11 @@ import { LegacyBio } from "@/components/LegacyBio";
 import { ExhibitModules } from "@/components/ExhibitModules";
 import { CuratorialText } from "@/components/CuratorialText";
 import { VenueDates } from "@/components/VenueDates";
+import { Infografias } from "@/components/Infografias";
+import { Agradecimientos } from "@/components/Agradecimientos";
 import { Impact } from "@/components/Impact";
 import { Team } from "@/components/Team";
+import { Participantes } from "@/components/Participantes";
 import { Contact } from "@/components/Contact";
 import { Footer } from "@/components/Footer";
 import { DonateTab } from "@/components/DonateTab";
@@ -23,8 +26,11 @@ const Index = () => {
       <ExhibitModules />
       <CuratorialText />
       <VenueDates />
+      <Infografias />
+      <Agradecimientos />
       <Impact />
       <Team />
+      <Participantes />
       <Contact />
       <Footer />
       

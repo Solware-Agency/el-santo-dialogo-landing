@@ -115,5 +115,23 @@ export const content = {
 
   footer: {
     attributionHtml: "Landing desarrollado por <a href=\"https://www.solware.agency\" target=\"_blank\" rel=\"noopener noreferrer\"><strong>Solware</strong></a>."
+  },
+
+  infografias: [
+    { title: "Línea de tiempo de JGH", caption: "Hitos biográficos desde 1864 a 2025.", src: "/img/infografia-timeline.jpg" },
+    { title: "Mapa de devoción", caption: "Lugares de veneración en Venezuela y el mundo.", src: "/img/infografia-mapa.jpg" },
+    { title: "Aportes a la medicina", caption: "Cátedras, laboratorios e innovación científica.", src: "/img/infografia-medicina.jpg" }
+  ],
+
+  agradecimientos: {
+    instituciones: [
+      // { name: "Parroquia La Candelaria", logo: "/img/logos/candelaria.png" }
+    ],
+    colaboradores: [
+      // { name: "Nombre Apellido" }
+    ],
+    voluntariado: [
+      // { name: "Nombre Apellido" }
+    ]
   }
 };
