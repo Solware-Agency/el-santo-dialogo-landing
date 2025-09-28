@@ -103,9 +103,9 @@ export const content = {
 
   // Clickable Contact
   contact: {
+    whatsapp: "https://wa.me/584141234567?text=Hola,%20estoy%20interesado%20en%20la%20exposición%20de%20José%20Gregorio%20Hernández",
     phone: "tel:+00000000000",           // will be replaced later
     email: "mailto:info@example.com",    // will be replaced later
-    whatsapp: "https://wa.me/XXXXXXXXXXX",
     socials: [
       { name: "Instagram", icon: "Instagram", url: "#" },
       { name: "Facebook",  icon: "Facebook",  url: "#" },
