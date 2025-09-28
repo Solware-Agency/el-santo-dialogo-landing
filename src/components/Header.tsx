@@ -2,7 +2,8 @@
 
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { Menu, X } from "lucide-react";
+import { getIcon } from "@/lib/icons";
+import { ARIA_LABELS, Z_INDEX } from "@/constants";
 
 export const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -21,8 +22,10 @@ export const Header = () => {
     { label: "Contacto", id: "contacto" },
   ];
 
+  const MenuIcon = getIcon("Menu");
+  const XIcon = getIcon("X");
   return (
-    <header className="fixed top-0 w-full bg-background/95 backdrop-blur-sm border-b border-border/50 z-10">
+    <header className="fixed top-0 w-full bg-background/95 backdrop-blur-sm border-b border-border/50" style={{ zIndex: Z_INDEX.HEADER }}>
       <div className="container mx-auto px-4 max-w-6xl">
         <nav className="flex items-center justify-between py-4">
           {/* Logo/Title */}
@@ -51,12 +54,12 @@ export const Header = () => {
             size="sm"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             className="md:hidden"
-            aria-label="Abrir menú de navegación"
+            aria-label={ARIA_LABELS.TOGGLE_MENU}
           >
             {isMenuOpen ? (
-              <X className="w-5 h-5" />
+              <XIcon className="w-5 h-5" />
             ) : (
-              <Menu className="w-5 h-5" />
+              <MenuIcon className="w-5 h-5" />
             )}
           </Button>
         </nav>

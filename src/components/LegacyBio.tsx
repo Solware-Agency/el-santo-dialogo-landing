@@ -1,46 +1,35 @@
-import { BookOpen, Stethoscope, Cross, User } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Section } from "@/components/ui/section";
+import { SectionHeader } from "@/components/ui/section-header";
+import { IconBadge } from "@/components/ui/icon-badge";
 import { FadeIn } from "./FadeIn";
 import { content } from "@/content";
-
-const iconMap = {
-  BookOpen,
-  Stethoscope,
-  Cross,
-  User,
-};
+import { BREAKPOINT_CLASSES, ANIMATION_DELAYS } from "@/constants";
+import type { IconName } from "@/lib/icons";
 
 export const LegacyBio = () => {
   return (
-    <section id="legado" className="py-20 bg-muted/30">
-      <div className="container mx-auto px-4 max-w-6xl">
+    <Section id="legado" background="muted">
         <FadeIn>
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-display text-primary mb-6">
-              La Forja de un Santo Venezolano
-            </h2>
-            <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-              Ciencia, Fe y Humanidad en perfecta armonía
-            </p>
-          </div>
+          <SectionHeader 
+            title="La Forja de un Santo Venezolano"
+            subtitle="Ciencia, Fe y Humanidad en perfecta armonía"
+          />
         </FadeIn>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
           {content.bioSections.map((section, index) => {
-            const IconComponent = iconMap[section.icon as keyof typeof iconMap];
             return (
-              <FadeIn key={section.title} delay={index * 0.2}>
-                <Card className="h-full bg-card border-border/50 rounded-xl shadow-sm hover:shadow-elegant transition-smooth">
+              <FadeIn key={section.title} delay={index * ANIMATION_DELAYS.STEP_1}>
+                <Card className={`h-full ${BREAKPOINT_CLASSES.CARD_ROUNDED} hover:shadow-elegant transition-smooth`}>
                   <CardHeader className="text-center pb-4">
-                    <div className="mx-auto mb-4 w-16 h-16 bg-gradient-primary rounded-2xl flex items-center justify-center shadow-glow">
-                      <IconComponent className="w-8 h-8 text-primary-foreground" />
-                    </div>
+                    <IconBadge icon={section.icon as IconName} className="mx-auto mb-4" />
                     <CardTitle className="text-lg font-display text-primary">
                       {section.title}
                     </CardTitle>
                   </CardHeader>
                   <CardContent>
-                    <p className="text-sm leading-relaxed text-muted-foreground prose-justify px-1">
+                    <p className={`text-sm text-muted-foreground px-1 ${BREAKPOINT_CLASSES.PROSE_JUSTIFIED}`}>
                       {section.body}
                     </p>
                   </CardContent>
@@ -49,7 +38,6 @@ export const LegacyBio = () => {
             );
           })}
         </div>
-      </div>
-    </section>
+    </Section>
   );
 };

@@ -1,6 +1,9 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Section } from "@/components/ui/section";
+import { SectionHeader } from "@/components/ui/section-header";
 import { FadeIn } from "./FadeIn";
 import { content } from "@/content";
+import { BREAKPOINT_CLASSES, ANIMATION_DELAYS } from "@/constants";
 
 // Role precedence (highest to lowest priority)
 const ROLE_PRECEDENCE = [
@@ -13,7 +16,7 @@ const ROLE_PRECEDENCE = [
 ];
 
 // De-duplicate team members at render time
-const deduplicateTeamMembers = (teamData: typeof content.team) => {
+const deduplicateTeamMembers = (teamData: typeof content.team): typeof content.team => {
   const assignedPeople = new Set<string>();
   
   return teamData.map(teamSection => {
@@ -36,23 +39,18 @@ export const Team = () => {
   const deduplicatedTeam = deduplicateTeamMembers(content.team);
 
   return (
-    <section className="py-20 bg-background">
-      <div className="container mx-auto px-4 max-w-6xl">
+    <Section>
         <FadeIn>
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-display text-primary mb-6">
-              El Corazón del Proyecto
-            </h2>
-            <p className="text-lg text-muted-foreground prose-justify max-w-2xl mx-auto">
-              Conozca a nuestro equipo
-            </p>
-          </div>
+          <SectionHeader 
+            title="El Corazón del Proyecto"
+            subtitle="Conozca a nuestro equipo"
+          />
         </FadeIn>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {deduplicatedTeam.map((teamSection, index) => (
-            <FadeIn key={teamSection.role} delay={index * 0.1}>
-              <Card className="h-full rounded-xl shadow-sm border-border/50 bg-card">
+            <FadeIn key={teamSection.role} delay={index * ANIMATION_DELAYS.ITEM_STAGGER}>
+              <Card className={`h-full ${BREAKPOINT_CLASSES.CARD_ROUNDED}`}>
                 <CardHeader>
                   <CardTitle className="text-lg font-display text-primary leading-tight">
                     {teamSection.role}
@@ -74,7 +72,6 @@ export const Team = () => {
             </FadeIn>
           ))}
         </div>
-      </div>
-    </section>
+    </Section>
   );
 };

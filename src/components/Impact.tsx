@@ -1,26 +1,25 @@
 import { Card, CardContent } from "@/components/ui/card";
+import { Section } from "@/components/ui/section";
+import { SectionHeader } from "@/components/ui/section-header";
 import { FadeIn } from "./FadeIn";
 import { content } from "@/content";
+import { BREAKPOINT_CLASSES, ANIMATION_DELAYS } from "@/constants";
 
 export const Impact = () => {
   return (
-    <section className="py-20 bg-muted/30">
-      <div className="container mx-auto px-4 max-w-6xl">
+    <Section background="muted">
         <FadeIn>
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-display text-primary mb-6">
-              Impacto de la Exposición
-            </h2>
-            <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed prose-justify">
-              {content.impact.summary}
-            </p>
-          </div>
+          <SectionHeader 
+            title="Impacto de la Exposición"
+            subtitle={content.impact.summary}
+            className="mb-12"
+          />
         </FadeIn>
 
         <div className="grid md:grid-cols-2 gap-6 mt-12">
           {content.impact.stats.map((stat, index) => (
-            <FadeIn key={stat.label} delay={index * 0.2}>
-              <Card className="rounded-xl shadow-sm border-border/50 bg-card">
+            <FadeIn key={stat.label} delay={index * ANIMATION_DELAYS.STEP_1}>
+              <Card className={BREAKPOINT_CLASSES.CARD_ROUNDED}>
                 <CardContent className="p-8 text-center">
                   <div className="text-4xl md:text-5xl font-display text-primary mb-2">
                     {stat.value}
@@ -33,7 +32,6 @@ export const Impact = () => {
             </FadeIn>
           ))}
         </div>
-      </div>
-    </section>
+    </Section>
   );
 };

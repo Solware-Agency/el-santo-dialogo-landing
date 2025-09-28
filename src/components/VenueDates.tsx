@@ -1,42 +1,37 @@
-import { MapPin, Calendar } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
+import { Section } from "@/components/ui/section";
+import { SectionHeader } from "@/components/ui/section-header";
+import { IconBadge } from "@/components/ui/icon-badge";
 import { FadeIn } from "./FadeIn";
 import { content } from "@/content";
+import { BREAKPOINT_CLASSES, ANIMATION_DELAYS } from "@/constants";
 
 export const VenueDates = () => {
   return (
-    <section className="py-20 bg-background">
-      <div className="container mx-auto px-4 max-w-4xl">
+    <Section className="max-w-4xl">
         <FadeIn>
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-display text-primary mb-6">
-              Información de la Exposición
-            </h2>
-            <p className="text-lg text-muted-foreground prose-justify max-w-2xl mx-auto">
-              Ubicación y fechas de la muestra
-            </p>
-          </div>
+          <SectionHeader 
+            title="Información de la Exposición"
+            subtitle="Ubicación y fechas de la muestra"
+            className="mb-12"
+          />
         </FadeIn>
 
         <div className="grid md:grid-cols-2 gap-6">
-          <FadeIn delay={0.2}>
-            <Card className="rounded-xl shadow-sm border-border/50 bg-card">
+          <FadeIn delay={ANIMATION_DELAYS.STEP_1}>
+            <Card className={BREAKPOINT_CLASSES.CARD_ROUNDED}>
               <CardContent className="p-8 text-center">
-                <div className="w-16 h-16 bg-gradient-primary rounded-2xl mx-auto mb-4 flex items-center justify-center shadow-glow">
-                  <MapPin className="w-8 h-8 text-primary-foreground" />
-                </div>
+                <IconBadge icon="MapPin" className="mx-auto mb-4" />
                 <h3 className="text-xl font-display text-primary mb-2">Ubicación</h3>
                 <p className="text-muted-foreground">{content.venueDates.location}</p>
               </CardContent>
             </Card>
           </FadeIn>
 
-          <FadeIn delay={0.4}>
-            <Card className="rounded-xl shadow-sm border-border/50 bg-card">
+          <FadeIn delay={ANIMATION_DELAYS.STEP_2}>
+            <Card className={BREAKPOINT_CLASSES.CARD_ROUNDED}>
               <CardContent className="p-8 text-center">
-                <div className="w-16 h-16 bg-gradient-accent rounded-2xl mx-auto mb-4 flex items-center justify-center shadow-glow">
-                  <Calendar className="w-8 h-8 text-accent-foreground" />
-                </div>
+                <IconBadge icon="Calendar" variant="accent" className="mx-auto mb-4" />
                 <h3 className="text-xl font-display text-primary mb-2">Fechas</h3>
                 <p className="text-muted-foreground">
                   Apertura: {content.venueDates.opening}
@@ -47,7 +42,6 @@ export const VenueDates = () => {
             </Card>
           </FadeIn>
         </div>
-      </div>
-    </section>
+    </Section>
   );
 };

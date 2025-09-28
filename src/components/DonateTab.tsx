@@ -1,6 +1,6 @@
 "use client";
 
-import { MessageCircle } from "lucide-react";
+import { ARIA_LABELS, Z_INDEX, CONTACT_CONFIG } from "@/constants";
 
 interface DonateTabProps {
   phone?: string;
@@ -12,8 +12,8 @@ interface DonateTabProps {
 }
 
 export const DonateTab = ({
-  phone = "584141234567",
-  text = "Hola, estoy interesado y me gustaría contribuir con el proyecto.",
+  phone = CONTACT_CONFIG.PHONE,
+  text = CONTACT_CONFIG.DEFAULT_MESSAGE,
   side = "right",
   labelDesktop = "DONACIÓN",
 }: DonateTabProps) => {
@@ -28,12 +28,12 @@ export const DonateTab = ({
     : "left-3 sm:left-2";
 
   return (
-    <div className={`fixed top-1/2 -translate-y-1/2 ${sideClasses} z-30`}>
+    <div className={`fixed top-1/2 -translate-y-1/2 ${sideClasses}`} style={{ zIndex: Z_INDEX.DONATION_TAB }}>
       <a
         href={whatsappUrl}
         target="_blank"
         rel="noopener noreferrer"
-        aria-label="Donar por WhatsApp"
+        aria-label={ARIA_LABELS.DONATE_WHATSAPP}
         className="flex items-center justify-center bg-accent hover:brightness-110 text-primary rounded-2xl shadow-lg w-12 sm:w-14 transition-smooth focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 focus:ring-offset-background py-3 px-2 sm:py-4 sm:px-3 overflow-visible min-h-[44px] max-h-[35vh] sm:max-h-[30vh]"
         style={{ minTouchTarget: '44px' }}
       >

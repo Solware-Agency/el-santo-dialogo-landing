@@ -1,25 +1,23 @@
 import { Card, CardContent } from "@/components/ui/card";
+import { Section } from "@/components/ui/section";
+import { SectionHeader } from "@/components/ui/section-header";
 import { FadeIn } from "./FadeIn";
 import { content } from "@/content";
+import { BREAKPOINT_CLASSES, ANIMATION_DELAYS } from "@/constants";
 
 export const ExhibitModules = () => {
   return (
-    <section id="exposicion" className="py-20 bg-background">
-      <div className="container mx-auto px-4 max-w-6xl">
+    <Section id="exposicion">
         <FadeIn>
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-display text-primary mb-6">
-              Un Viaje por la Exposición
-            </h2>
-            <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed prose-justify">
-              Descubre cada faceta de su vida a través de seis módulos inmersivos
-            </p>
-          </div>
+          <SectionHeader 
+            title="Un Viaje por la Exposición"
+            subtitle="Descubre cada faceta de su vida a través de seis módulos inmersivos"
+          />
         </FadeIn>
 
         <div className="space-y-12">
           {content.modules.map((module, index) => (
-            <FadeIn key={module.title} delay={index * 0.2}>
+            <FadeIn key={module.title} delay={index * ANIMATION_DELAYS.STEP_1}>
               <Card className={`overflow-hidden rounded-2xl shadow-elegant border-border/50 ${
                 index % 2 === 0 ? 'lg:flex-row' : 'lg:flex-row-reverse'
               } flex flex-col lg:flex`}>
@@ -37,7 +35,7 @@ export const ExhibitModules = () => {
                   <h3 className="text-xl md:text-2xl font-display text-primary mb-4 leading-tight">
                     {module.title}
                   </h3>
-                  <p className="text-muted-foreground leading-relaxed prose-justify">
+                  <p className={`text-muted-foreground ${BREAKPOINT_CLASSES.PROSE_JUSTIFIED}`}>
                     {module.body}
                   </p>
                 </CardContent>
@@ -45,7 +43,6 @@ export const ExhibitModules = () => {
             </FadeIn>
           ))}
         </div>
-      </div>
-    </section>
+    </Section>
   );
 };

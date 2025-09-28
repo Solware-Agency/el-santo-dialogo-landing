@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { FadeIn } from "./FadeIn";
 import { content } from "@/content";
+import { BREAKPOINT_CLASSES, ANIMATION_DELAYS } from "@/constants";
 import heroImage from "@/assets/jose-gregorio-hero.jpg";
 
 export const Hero = () => {
@@ -13,7 +14,7 @@ export const Hero = () => {
 
   return (
     <section className="relative min-h-screen flex items-center justify-center bg-background px-4 py-20">
-      <div className="container mx-auto max-w-6xl">
+      <div className={BREAKPOINT_CLASSES.CONTAINER}>
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Content */}
           <div className="text-center lg:text-left space-y-8">
@@ -23,18 +24,18 @@ export const Hero = () => {
               </h1>
             </FadeIn>
 
-            <FadeIn delay={0.2}>
-              <p className="text-xl md:text-2xl text-muted-foreground leading-relaxed max-w-2xl mx-auto lg:mx-0 prose-justify">
+            <FadeIn delay={ANIMATION_DELAYS.STEP_1}>
+              <p className={`text-xl md:text-2xl text-muted-foreground max-w-2xl mx-auto lg:mx-0 ${BREAKPOINT_CLASSES.PROSE_JUSTIFIED}`}>
                 {content.hero.subtitle}
               </p>
             </FadeIn>
 
-            <FadeIn delay={0.4}>
+            <FadeIn delay={ANIMATION_DELAYS.STEP_2}>
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
                 <Button 
                   size="lg"
                   onClick={() => scrollToSection("exposicion")}
-                  className="bg-primary text-primary-foreground hover:bg-primary/90 rounded-xl px-8 py-4 text-lg font-medium transition-smooth shadow-elegant"
+                  className={BREAKPOINT_CLASSES.BUTTON_PRIMARY}
                 >
                   {content.hero.ctas.primary}
                 </Button>
@@ -42,7 +43,7 @@ export const Hero = () => {
                   variant="outline"
                   size="lg"
                   onClick={() => scrollToSection("contacto")}
-                  className="border-primary text-primary hover:bg-primary hover:text-primary-foreground rounded-xl px-8 py-4 text-lg font-medium transition-smooth"
+                  className={BREAKPOINT_CLASSES.BUTTON_OUTLINE}
                 >
                   {content.hero.ctas.secondary}
                 </Button>
@@ -51,7 +52,7 @@ export const Hero = () => {
           </div>
 
           {/* Image */}
-          <FadeIn delay={0.6}>
+          <FadeIn delay={ANIMATION_DELAYS.STEP_3}>
             <div className="relative">
               <div className="rounded-2xl overflow-hidden shadow-elegant">
                 <img
