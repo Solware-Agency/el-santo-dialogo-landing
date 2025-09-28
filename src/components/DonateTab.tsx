@@ -38,11 +38,19 @@ export const DonateTab = ({
           target="_blank"
           rel="noopener noreferrer"
           aria-label="Hacer una donación por WhatsApp"
-          className="block bg-accent hover:brightness-110 text-primary rounded-2xl shadow-lg py-8 px-4 transition-smooth focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 focus:ring-offset-background"
+          className="flex items-center justify-center bg-accent hover:brightness-110 text-primary rounded-2xl shadow-lg min-h-64 w-12 transition-smooth focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 focus:ring-offset-background"
         >
+          {/* Screen reader only horizontal text */}
+          <span className="sr-only">{labelDesktop}</span>
+          
+          {/* Visual vertical text */}
           <span 
-            className="block font-display font-medium text-sm tracking-widest transform -rotate-90 whitespace-nowrap"
-            style={{ writingMode: 'vertical-rl', textOrientation: 'mixed' }}
+            className="font-display font-medium text-sm tracking-widest text-center"
+            style={{ 
+              writingMode: 'vertical-rl', 
+              textOrientation: 'mixed' 
+            }}
+            aria-hidden="true"
           >
             {labelDesktop}
           </span>
