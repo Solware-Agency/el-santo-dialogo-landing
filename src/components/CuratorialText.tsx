@@ -6,7 +6,8 @@ import { BREAKPOINT_CLASSES } from "@/constants";
 
 export const CuratorialText = () => {
   return (
-    <Section background="muted" className="max-w-4xl">
+    <Section background="muted">
+      <div className="max-w-4xl mx-auto">
         <FadeIn>
           <Card className={`rounded-2xl shadow-elegant ${BREAKPOINT_CLASSES.CARD_ROUNDED}`}>
             <CardContent className="p-8 md:p-12 text-center">
@@ -19,6 +20,7 @@ export const CuratorialText = () => {
             </CardContent>
           </Card>
         </FadeIn>
+      </div>
     </Section>
   );
 };
