@@ -197,6 +197,7 @@ export const Contact = () => {
                         value={formData.name}
                         onChange={handleChange("name")}
                         required
+                        placeholder="Escriba su nombre y apellido"
                         className="rounded-xl border-border/50 focus:border-ring mt-2"
                         maxLength={CONTACT_CONFIG.FORM_MAX_LENGTHS.NAME}
                       />
@@ -211,6 +212,7 @@ export const Contact = () => {
                         value={formData.email}
                         onChange={handleChange("email")}
                         required
+                        placeholder="nombre@ejemplo.com"
                         className="rounded-xl border-border/50 focus:border-ring mt-2"
                         maxLength={CONTACT_CONFIG.FORM_MAX_LENGTHS.EMAIL}
                       />
@@ -226,6 +228,7 @@ export const Contact = () => {
                         id="organization"
                         value={formData.organization}
                         onChange={handleChange("organization")}
+                        placeholder="Nombre de su institución (opcional)"
                         className="rounded-xl border-border/50 focus:border-ring mt-2"
                         maxLength={CONTACT_CONFIG.FORM_MAX_LENGTHS.ORGANIZATION}
                       />
@@ -238,6 +241,7 @@ export const Contact = () => {
                         id="topic"
                         value={formData.topic}
                         onChange={handleChange("topic")}
+                        placeholder="Motivo del mensaje (ej.: visita guiada, prensa)"
                         className="rounded-xl border-border/50 focus:border-ring mt-2"
                         maxLength={CONTACT_CONFIG.FORM_MAX_LENGTHS.TOPIC}
                       />
@@ -253,6 +257,7 @@ export const Contact = () => {
                       value={formData.message}
                       onChange={handleChange("message")}
                       required
+                      placeholder="Cuéntenos brevemente en qué podemos ayudarle"
                       rows={5}
                       className="rounded-xl border-border/50 focus:border-ring mt-2 resize-none"
                       maxLength={CONTACT_CONFIG.FORM_MAX_LENGTHS.MESSAGE}
