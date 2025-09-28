@@ -4,7 +4,7 @@ import { content } from "@/content";
 
 // Role precedence (highest to lowest priority)
 const ROLE_PRECEDENCE = [
-  "Conceptualización y Producción General",
+  "Producción General",
   "Textos", 
   "Museografía y Diseño",
   "Comunicaciones",

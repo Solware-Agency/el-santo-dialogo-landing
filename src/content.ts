@@ -93,7 +93,7 @@ export const content = {
   },
 
   team: [
-    { role: "Conceptualización y Producción General", people: ["Eva Mendoza", "Valentina Sosa"] },
+    { role: "Producción General", people: ["Eva Mendoza", "Valentina Sosa"] },
     { role: "Textos", people: ["Padre Gerardino Barracchini", "Eva Mendoza", "Valentina Sosa"] },
     { role: "Museografía y Diseño", people: ["Juan Carlos Hernández", "Eva Mendoza", "Valentina Sosa"] },
     { role: "Comunicaciones", people: ["Rubén Darío Hernández"] },
