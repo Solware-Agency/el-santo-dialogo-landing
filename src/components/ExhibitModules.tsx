@@ -11,7 +11,7 @@ export const ExhibitModules = () => {
             <h2 className="text-3xl md:text-4xl font-display text-primary mb-6">
               Un Viaje por la Exposición
             </h2>
-            <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+            <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed prose-justify">
               Descubre cada faceta de su vida a través de seis módulos inmersivos
             </p>
           </div>
@@ -37,7 +37,7 @@ export const ExhibitModules = () => {
                   <h3 className="text-xl md:text-2xl font-display text-primary mb-4 leading-tight">
                     {module.title}
                   </h3>
-                  <p className="text-muted-foreground leading-relaxed">
+                  <p className="text-muted-foreground leading-relaxed prose-justify">
                     {module.body}
                   </p>
                 </CardContent>

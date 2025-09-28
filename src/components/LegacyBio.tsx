@@ -40,7 +40,7 @@ export const LegacyBio = () => {
                     </CardTitle>
                   </CardHeader>
                   <CardContent>
-                    <p className="text-sm leading-relaxed text-muted-foreground">
+                    <p className="text-sm leading-relaxed text-muted-foreground prose-justify px-1">
                       {section.body}
                     </p>
                   </CardContent>

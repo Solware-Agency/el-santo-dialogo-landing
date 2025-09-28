@@ -12,7 +12,7 @@ export const CuratorialText = () => {
               <h2 className="text-2xl md:text-3xl font-display text-primary mb-8 leading-tight">
                 {content.curatorial.heading}
               </h2>
-              <p className="text-lg text-muted-foreground leading-relaxed max-w-3xl mx-auto">
+              <p className="text-lg text-muted-foreground leading-relaxed max-w-3xl mx-auto prose-justify">
                 {content.curatorial.body}
               </p>
             </CardContent>

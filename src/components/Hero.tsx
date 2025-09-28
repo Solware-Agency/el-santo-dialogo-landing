@@ -24,7 +24,7 @@ export const Hero = () => {
             </FadeIn>
 
             <FadeIn delay={0.2}>
-              <p className="text-xl md:text-2xl text-muted-foreground leading-relaxed max-w-2xl mx-auto lg:mx-0">
+              <p className="text-xl md:text-2xl text-muted-foreground leading-relaxed max-w-2xl mx-auto lg:mx-0 prose-justify">
                 {content.hero.subtitle}
               </p>
             </FadeIn>

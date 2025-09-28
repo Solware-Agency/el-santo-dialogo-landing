@@ -102,4 +102,23 @@
   body {
     @apply bg-background text-foreground;
   }
+
+  /* Justified text for body copy with Spanish hyphenation */
+  .prose-justify {
+    text-align: justify;
+    hyphens: auto;
+    word-break: normal;
+    line-height: 1.6;
+  }
+
+  /* Prevent justification on very short lines */
+  .prose-justify-responsive {
+    @apply prose-justify;
+  }
+
+  @media (max-width: 640px) {
+    .prose-justify-short {
+      text-align: left;
+    }
+  }
 }

@@ -12,7 +12,7 @@ export const VenueDates = () => {
             <h2 className="text-3xl md:text-4xl font-display text-primary mb-6">
               Información de la Exposición
             </h2>
-            <p className="text-lg text-muted-foreground">
+            <p className="text-lg text-muted-foreground prose-justify max-w-2xl mx-auto">
               Ubicación y fechas de la muestra
             </p>
           </div>

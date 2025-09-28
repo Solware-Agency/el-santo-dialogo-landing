@@ -109,7 +109,7 @@ export const Contact = () => {
             <h2 className="text-3xl md:text-4xl font-display text-primary mb-6">
               Contacto y Visitas
             </h2>
-            <p className="text-lg text-muted-foreground">
+            <p className="text-lg text-muted-foreground prose-justify max-w-2xl mx-auto">
               Póngase en contacto con nosotros para más información
             </p>
           </div>

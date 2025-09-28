@@ -11,7 +11,7 @@ export const Impact = () => {
             <h2 className="text-3xl md:text-4xl font-display text-primary mb-6">
               Impacto de la Exposición
             </h2>
-            <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+            <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed prose-justify">
               {content.impact.summary}
             </p>
           </div>
