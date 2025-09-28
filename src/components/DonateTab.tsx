@@ -26,8 +26,8 @@ export const DonateTab = ({
   const whatsappUrl = `https://wa.me/${phone}?text=${encodedMessage}`;
   
   const sideClasses = side === "right" 
-    ? "right-0 translate-x-1/2" 
-    : "left-0 -translate-x-1/2";
+    ? "right-2" 
+    : "left-2";
 
   return (
     <>
@@ -38,17 +38,18 @@ export const DonateTab = ({
           target="_blank"
           rel="noopener noreferrer"
           aria-label="Hacer una donación por WhatsApp"
-          className="flex items-center justify-center bg-accent hover:brightness-110 text-primary rounded-2xl shadow-lg min-h-64 w-12 transition-smooth focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 focus:ring-offset-background"
+          className="flex items-center justify-center bg-accent hover:brightness-110 text-primary rounded-2xl shadow-elegant min-h-80 w-12 transition-smooth focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 focus:ring-offset-background py-6 overflow-visible"
         >
           {/* Screen reader only horizontal text */}
           <span className="sr-only">{labelDesktop}</span>
           
-          {/* Visual vertical text */}
+          {/* Visual vertical text - rotated 180 degrees for right side top-to-bottom reading */}
           <span 
-            className="font-display font-medium text-sm tracking-widest text-center"
+            className="font-display font-semibold text-sm tracking-wide text-center whitespace-nowrap overflow-visible"
             style={{ 
               writingMode: 'vertical-rl', 
-              textOrientation: 'mixed' 
+              textOrientation: 'mixed',
+              transform: side === 'right' ? 'rotate(180deg)' : 'none'
             }}
             aria-hidden="true"
           >
