@@ -8,6 +8,7 @@ import { Impact } from "@/components/Impact";
 import { Team } from "@/components/Team";
 import { Contact } from "@/components/Contact";
 import { Footer } from "@/components/Footer";
+import { DonateTab } from "@/components/DonateTab";
 
 const Index = () => {
   return (
@@ -24,6 +25,9 @@ const Index = () => {
       <Team />
       <Contact />
       <Footer />
+      
+      {/* Global Donation Tab */}
+      <DonateTab />
     </main>
   );
 };
