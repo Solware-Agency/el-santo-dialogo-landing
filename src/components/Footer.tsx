@@ -4,7 +4,7 @@ import { colorizeJoseGregorio } from "@/lib/text-utils";
 
 export const Footer = () => {
   return (
-    <footer className="bg-primary text-primary-foreground py-12">
+    <footer className="bg-primary text-primary-foreground py-12 [&_a]:text-accent-gold [&_a:hover]:text-accent-gold-hover [&_a:focus]:text-accent-gold [&_a:focus]:underline [&_a:visited]:text-accent-gold">
       <div className="container mx-auto px-4 max-w-6xl">
         <FadeIn>
           <div className="text-center">

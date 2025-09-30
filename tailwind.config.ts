@@ -43,6 +43,8 @@ export default {
           DEFAULT: "hsl(var(--accent))",
           foreground: "hsl(var(--accent-foreground))",
           light: "hsl(var(--accent-light))",
+          gold: "#fcd400",
+          "gold-hover": "#e6bf00",
         },
         santo: {
           DEFAULT: "var(--santo-red)",
