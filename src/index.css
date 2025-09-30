@@ -22,20 +22,20 @@
 
   :root {
     /* José Gregorio Hernández Color Palette */
-    --background: 52 100% 76%;           /* Light gold #fee589 */
+    --background: 44 100% 95%;           /* Light beige #fdf6e3 */
     --foreground: 231 48% 48%;           /* Deep blue for text */
     
-    --card: 52 100% 76%;                 /* Light gold for cards */
+    --card: 44 100% 95%;                 /* Light beige for cards */
     --card-foreground: 231 48% 48%;      /* Deep blue text on cards */
     
-    --popover: 52 100% 76%;
+    --popover: 44 100% 95%;
     --popover-foreground: 231 48% 48%;
     
     --primary: 231 73% 35%;              /* Deep blue #2d2e83 */
-    --primary-foreground: 52 100% 76%;   /* Light gold text on primary */
+    --primary-foreground: 44 100% 95%;   /* Light beige text on primary */
     
     --secondary: 210 51% 58%;            /* Mid blue #376fb6 */
-    --secondary-foreground: 52 100% 76%; /* Light gold text on secondary */
+    --secondary-foreground: 44 100% 95%; /* Light beige text on secondary */
     
     --muted: 44 40% 85%;                 /* Lighter beige for muted elements */
     --muted-foreground: 231 48% 48%;     /* Deep blue text on muted */
@@ -46,7 +46,7 @@
     --accent-light: 50 100% 85%;         /* Lighter gold tint */
     
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 52 100% 76%;
+    --destructive-foreground: 44 100% 95%;
     
     --border: 44 30% 80%;                /* Subtle beige border */
     --input: 44 30% 80%;
