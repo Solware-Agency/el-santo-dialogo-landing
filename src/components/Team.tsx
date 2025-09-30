@@ -171,8 +171,10 @@ export const Team = () => {
           </FadeIn>
         )}
 
+        {/* Bloque B - Lista global de personas eliminada */}
+        
         {/* Bloque C - Crédito de desarrollo web */}
-        <FadeIn delay={0.6}>
+        <FadeIn delay={0.4}>
           <Card className={`${BREAKPOINT_CLASSES.CARD_ROUNDED} max-w-2xl mx-auto`}>
             <CardContent className="p-8 text-center">
               <div className="flex items-center gap-3 justify-center mb-4">
