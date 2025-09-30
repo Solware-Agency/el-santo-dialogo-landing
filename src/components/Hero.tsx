@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { FadeIn } from "./FadeIn";
 import { content } from "@/content";
 import { BREAKPOINT_CLASSES, ANIMATION_DELAYS } from "@/constants";
+import { colorizeJoseGregorio } from "@/lib/text-utils";
 import heroImage from "@/assets/jose-gregorio-hero.jpg";
 
 export const Hero = () => {
@@ -20,7 +21,7 @@ export const Hero = () => {
           <div className="text-center lg:text-left space-y-8">
             <FadeIn>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-normal text-primary leading-tight">
-                José Gregorio Hernández: <span className="font-santo-phrase">El Santo del Diálogo</span>
+                {colorizeJoseGregorio("José Gregorio Hernández: El Santo del Diálogo")}
               </h1>
             </FadeIn>
 

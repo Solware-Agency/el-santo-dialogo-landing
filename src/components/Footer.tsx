@@ -1,5 +1,6 @@
 import { FadeIn } from "./FadeIn";
 import { content } from "@/content";
+import { colorizeJoseGregorio } from "@/lib/text-utils";
 
 export const Footer = () => {
   return (
@@ -9,7 +10,7 @@ export const Footer = () => {
           <div className="text-center">
             <div className="mb-8">
               <h3 className="text-2xl font-display mb-2">
-                José Gregorio Hernández: <span className="font-santo-phrase">El Santo del Diálogo</span>
+                {colorizeJoseGregorio("José Gregorio Hernández: El Santo del Diálogo")}
               </h3>
               <p className="text-primary-foreground/80">
                 Un legado de ciencia, fe y servicio

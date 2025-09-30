@@ -2,6 +2,7 @@ import { Section } from "@/components/ui/section";
 import { FadeIn } from "./FadeIn";
 import { BREAKPOINT_CLASSES, ANIMATION_DELAYS } from "@/constants";
 import heroImage from "@/assets/jose-gregorio-hero.jpg";
+import { colorizeJoseGregorio } from "@/lib/text-utils";
 
 export const WhoIsJGH = () => {
   return (
@@ -31,14 +32,14 @@ export const WhoIsJGH = () => {
                     id="quien-es-jgh-title"
                     className="text-3xl md:text-4xl font-display text-primary mb-8 leading-tight"
                   >
-                    ¿Quién es José Gregorio Hernández?
+                    {colorizeJoseGregorio("¿Quién es José Gregorio Hernández?")}
                   </h2>
                 </FadeIn>
 
                 <div className="space-y-6">
                   <FadeIn delay={ANIMATION_DELAYS.STEP_2}>
                     <p className={`text-muted-foreground max-w-prose ${BREAKPOINT_CLASSES.PROSE_JUSTIFIED}`}>
-                      José Gregorio Hernández Cisneros nació en Isnotú, Estado Trujillo (Venezuela), el 26 de octubre de 1864. Médico, científico y hombre de profunda fe, es conocido popularmente como el "Médico de los Pobres" por su dedicación a los más necesitados y su vida de servicio.
+                      {colorizeJoseGregorio("José Gregorio Hernández Cisneros nació en Isnotú, Estado Trujillo (Venezuela), el 26 de octubre de 1864. Médico, científico y hombre de profunda fe, es conocido popularmente como el \"Médico de los Pobres\" por su dedicación a los más necesitados y su vida de servicio.")}
                     </p>
                   </FadeIn>
 

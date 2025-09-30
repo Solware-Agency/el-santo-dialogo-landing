@@ -4,6 +4,7 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { getIcon } from "@/lib/icons";
 import { ARIA_LABELS, Z_INDEX } from "@/constants";
+import { colorizeJoseGregorio } from "@/lib/text-utils";
 
 export const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -31,7 +32,7 @@ export const Header = () => {
           {/* Logo/Title */}
           <div className="flex items-center">
             <h2 className="text-xl font-display text-santo cursor-pointer" onClick={() => scrollToSection("hero")}>
-              José Gregorio Hernández: <span className="font-santo-phrase">El Santo del Diálogo</span>
+              {colorizeJoseGregorio("José Gregorio Hernández: El Santo del Diálogo")}
             </h2>
           </div>
 

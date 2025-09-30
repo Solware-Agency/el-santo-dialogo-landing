@@ -47,6 +47,7 @@ export default {
         santo: {
           DEFAULT: "var(--santo-red)",
         },
+        wine: "#811810",
         popover: {
           DEFAULT: "hsl(var(--popover))",
           foreground: "hsl(var(--popover-foreground))",
