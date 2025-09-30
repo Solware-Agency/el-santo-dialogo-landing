@@ -31,7 +31,7 @@ export const Header = () => {
           {/* Logo/Title */}
           <div className="flex items-center">
             <h2 className="text-xl font-display text-santo cursor-pointer" onClick={() => scrollToSection("hero")}>
-              José Gregorio Hernández: El Santo del Diálogo
+              José Gregorio Hernández: <span className="font-santo-phrase">El Santo del Diálogo</span>
             </h2>
           </div>
 

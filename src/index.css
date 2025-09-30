@@ -20,6 +20,11 @@
     font-display: swap;
   }
 
+  /* Utility class for "El Santo del Diálogo" phrase */
+  .font-santo-phrase {
+    font-family: 'Manometer Sans', ui-sans-serif, system-ui, sans-serif;
+  }
+
   :root {
     /* José Gregorio Hernández Color Palette */
     --background: 44 100% 95%;           /* Light beige #fdf6e3 */

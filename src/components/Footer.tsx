@@ -9,7 +9,7 @@ export const Footer = () => {
           <div className="text-center">
             <div className="mb-8">
               <h3 className="text-2xl font-display mb-2">
-                José Gregorio Hernández: El Santo del Diálogo
+                José Gregorio Hernández: <span className="font-santo-phrase">El Santo del Diálogo</span>
               </h3>
               <p className="text-primary-foreground/80">
                 Un legado de ciencia, fe y servicio
