@@ -91,31 +91,6 @@ export const Team = () => {
           </div>
         </div>
 
-        {/* Crédito de desarrollo web */}
-        <FadeIn delay={0.4}>
-          <Card className={`${BREAKPOINT_CLASSES.CARD_ROUNDED} max-w-2xl mx-auto`}>
-            <CardContent className="p-8 text-center">
-              <div className="flex items-center gap-3 justify-center mb-4">
-                <Code2Icon className="w-6 h-6 text-primary" aria-hidden="true" />
-                <h3 className="text-xl font-display text-primary">
-                  Desarrollo y arquitectura web
-                </h3>
-              </div>
-              <p className={`text-muted-foreground ${BREAKPOINT_CLASSES.PROSE_JUSTIFIED} max-w-prose mx-auto`}>
-                Sitio implementado con Next.js, React y Tailwind por el{" "}
-                <a 
-                  href="https://www.solware.agency" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="text-primary hover:text-primary/80 transition-colors underline underline-offset-2"
-                >
-                  equipo de Solware
-                </a>
-                . Desarrollo y arquitectura a cargo de Eugenio Andreone y Jesús Freites.
-              </p>
-            </CardContent>
-          </Card>
-        </FadeIn>
     </Section>
   );
 };
