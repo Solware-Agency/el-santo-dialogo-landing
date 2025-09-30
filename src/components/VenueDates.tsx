@@ -53,7 +53,7 @@ export const VenueDates = () => {
                   {/* Google Maps iframe */}
                   <div className="rounded-xl overflow-hidden shadow-md">
                     <div className="w-full h-[300px] bg-muted/30 rounded-xl flex items-center justify-center">
-                      <div className="text-center">
+                      {/* <div className="text-center">
                         <div className="w-16 h-16 bg-primary/10 rounded-2xl mx-auto mb-4 flex items-center justify-center">
                           <span className="text-2xl">🗺️</span>
                         </div>
@@ -69,7 +69,16 @@ export const VenueDates = () => {
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
                           </svg>
                         </a>
-                      </div>
+                      </div> */}
+                      <iframe
+												src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3208.5841627937125!2d-66.90505348595033!3d10.505472608531244!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8c2a5ed2dadcab0f%3A0xc8e5e88c9bfa3c25!2sIglesia%20Nuestra%20Se%C3%B1ora%20de%20la%20Candelaria!5e1!3m2!1ses-419!2sve!4v1759257927867!5m2!1ses-419!2sve"
+												width="600"
+												height="450"
+												style={{ border: 0 }}
+												allowFullScreen
+												loading="lazy"
+												referrerPolicy="no-referrer-when-downgrade"
+											></iframe>
                     </div>
                   </div>
                 </div>

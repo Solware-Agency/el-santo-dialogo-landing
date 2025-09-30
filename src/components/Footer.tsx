@@ -9,8 +9,8 @@ export const Footer = () => {
         <FadeIn>
           <div className="text-center">
             <div className="mb-8">
-              <h3 className="text-2xl font-display mb-2">
-                {colorizeJoseGregorio("José Gregorio Hernández: El Santo del Diálogo")}
+              <h3 className="text-2xl text-accent-gold mb-2 font-display">
+                José Gregorio Hernández: <span className="font-santo">El Santo del Diálogo</span>
               </h3>
               <p className="text-primary-foreground/80">
                 Un legado de ciencia, fe y servicio

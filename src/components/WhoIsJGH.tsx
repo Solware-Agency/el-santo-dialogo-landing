@@ -30,16 +30,16 @@ export const WhoIsJGH = () => {
                 <FadeIn delay={ANIMATION_DELAYS.STEP_1}>
                   <h2 
                     id="quien-es-jgh-title"
-                    className="text-3xl md:text-4xl font-display text-primary mb-8 leading-tight"
+                    className="text-3xl md:text-4xl font-display text-wine mb-8 leading-tight"
                   >
-                    {colorizeJoseGregorio("¿Quién es José Gregorio Hernández?")}
+                    ¿Quién es <span className="font-bold">José Gregorio Hernández</span>?
                   </h2>
                 </FadeIn>
 
                 <div className="space-y-6">
                   <FadeIn delay={ANIMATION_DELAYS.STEP_2}>
                     <p className={`text-muted-foreground max-w-prose ${BREAKPOINT_CLASSES.PROSE_JUSTIFIED}`}>
-                      {colorizeJoseGregorio("José Gregorio Hernández Cisneros nació en Isnotú, Estado Trujillo (Venezuela), el 26 de octubre de 1864. Médico, científico y hombre de profunda fe, es conocido popularmente como el \"Médico de los Pobres\" por su dedicación a los más necesitados y su vida de servicio.")}
+                      <span className="font-bold text-wine">José Gregorio Hernández Cisneros</span> nació en Isnotú, Estado Trujillo (Venezuela), el 26 de octubre de 1864. Médico, científico y hombre de profunda fe, es conocido popularmente como el "Médico de los Pobres" por su dedicación a los más necesitados y su vida de servicio.
                     </p>
                   </FadeIn>
 

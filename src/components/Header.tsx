@@ -42,7 +42,7 @@ export const Header = () => {
               <button
                 key={item.id}
                 onClick={() => scrollToSection(item.id)}
-                className="text-muted-foreground hover:text-primary transition-smooth font-medium"
+                className="text-wine transition-smooth font-medium"
               >
                 {item.label}
               </button>

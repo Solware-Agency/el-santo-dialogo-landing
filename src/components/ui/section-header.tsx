@@ -17,11 +17,11 @@ export const SectionHeader = ({
   
   return (
     <div className={cn(alignClass, "mb-16", className)}>
-      <h2 className="text-3xl md:text-4xl font-display text-primary mb-6">
+      <h2 className="text-3xl md:text-4xl font-display text-wine-palido mb-6">
         {title}
       </h2>
       {subtitle && (
-        <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed prose-justify">
+        <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed prose-justify text-center">
           {subtitle}
         </p>
       )}

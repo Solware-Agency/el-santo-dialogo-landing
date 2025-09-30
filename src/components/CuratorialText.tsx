@@ -11,7 +11,7 @@ export const CuratorialText = () => {
         <FadeIn>
           <Card className={`rounded-2xl shadow-elegant ${BREAKPOINT_CLASSES.CARD_ROUNDED}`}>
             <CardContent className="p-8 md:p-12 text-center">
-              <h2 className="text-2xl md:text-3xl font-display text-primary mb-8 leading-tight">
+              <h2 className="text-2xl md:text-3xl font-display text-wine-palido mb-8 leading-tight">
                 {content.curatorial.heading}
               </h2>
               <p className={`text-lg text-muted-foreground max-w-3xl mx-auto ${BREAKPOINT_CLASSES.PROSE_JUSTIFIED}`}>
