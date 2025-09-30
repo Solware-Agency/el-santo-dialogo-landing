@@ -55,6 +55,7 @@ export default {
       },
       fontFamily: {
         display: ['Clash Display', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+        santo: ['Manometer Sans', 'ui-sans-serif', 'system-ui', 'sans-serif'],
       },
       borderRadius: {
         lg: "var(--radius)",

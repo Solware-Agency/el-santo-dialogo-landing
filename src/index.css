@@ -13,6 +13,13 @@
     font-display: swap;
   }
 
+  @font-face {
+    font-family: 'Manometer Sans';
+    src: url('https://lafysstpyiejevhrlmzc.supabase.co/storage/v1/object/public/fonts/Ideografiko_jose_gregorio/ManometerSans.ttf') format('truetype');
+    font-weight: 400;
+    font-display: swap;
+  }
+
   :root {
     /* José Gregorio Hernández Color Palette */
     --background: 44 100% 95%;           /* Beige base #fdf6e3 */
