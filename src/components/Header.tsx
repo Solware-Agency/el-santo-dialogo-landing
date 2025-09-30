@@ -30,7 +30,7 @@ export const Header = () => {
         <nav className="flex items-center justify-between py-4">
           {/* Logo/Title */}
           <div className="flex items-center">
-            <h2 className="text-xl font-display text-primary cursor-pointer" onClick={() => scrollToSection("hero")}>
+            <h2 className="text-xl font-display text-santo cursor-pointer" onClick={() => scrollToSection("hero")}>
               José Gregorio Hernández
             </h2>
           </div>

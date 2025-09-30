@@ -60,6 +60,9 @@
     --shadow-elegant: 0 10px 30px -10px hsl(231 73% 35% / 0.15);
     --shadow-glow: 0 0 40px hsl(50 100% 65% / 0.2);
     --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    
+    /* Santo color */
+    --santo-red: #811810;
   }
 
   .dark {
