@@ -20,7 +20,7 @@ export const Hero = () => {
           <div className="text-center lg:text-left space-y-8">
             <FadeIn>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-normal text-primary leading-tight">
-                <span className="text-santo">José Gregorio Hernández</span>: <span className="text-santo font-santo">El Santo del Diálogo</span>
+                José Gregorio Hernández: El Santo del Diálogo
               </h1>
             </FadeIn>
 
