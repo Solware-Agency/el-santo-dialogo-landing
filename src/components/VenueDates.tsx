@@ -52,16 +52,25 @@ export const VenueDates = () => {
                   
                   {/* Google Maps iframe */}
                   <div className="rounded-xl overflow-hidden shadow-md">
-                    <iframe
-                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d980.7351689489891!2d-66.90540247388653!3d10.505338900000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8c2a5ed2dadcab0f%3A0xc8e5e88c9bfa3c25!2sIglesia%20Nuestra%20Se%C3%B1ora%20de%20la%20Candelaria!5e0!3m2!1ses-419!2sve!4v1759250833957!5m2!1ses-419!2sve"
-                      width="100%"
-                      height="300"
-                      frameBorder="0"
-                      allowFullScreen=""
-                      loading="lazy"
-                      referrerPolicy="no-referrer-when-downgrade"
-                      title="Ubicación de la Iglesia Nuestra Señora de la Candelaria">
-                    </iframe>
+                    <div className="w-full h-[300px] bg-muted/30 rounded-xl flex items-center justify-center">
+                      <div className="text-center">
+                        <div className="w-16 h-16 bg-primary/10 rounded-2xl mx-auto mb-4 flex items-center justify-center">
+                          <span className="text-2xl">🗺️</span>
+                        </div>
+                        <p className="text-muted-foreground mb-4">Ver ubicación en Google Maps</p>
+                        <a
+                          href="https://www.google.com/maps/place/Iglesia+Nuestra+Se%C3%B1ora+de+la+Candelaria/@10.505339,-66.905402,17z/data=!3m1!4b1!4m6!3m5!1s0x8c2a5ed2dadcab0f:0xc8e5e88c9bfa3c25!8m2!3d10.505339!4d-66.905402!16s%2Fg%2F11c5p8y8qy"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-6 py-3 rounded-xl hover:bg-primary/90 transition-smooth"
+                        >
+                          <span>Abrir en Google Maps</span>
+                          <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </CardContent>
