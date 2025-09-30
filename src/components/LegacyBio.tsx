@@ -23,8 +23,7 @@ export const LegacyBio = () => {
               <FadeIn key={section.title} delay={index * ANIMATION_DELAYS.STEP_1}>
                 <Card className={`h-full ${BREAKPOINT_CLASSES.CARD_ROUNDED} hover:shadow-elegant transition-smooth`}>
                   <CardHeader className="text-center pb-4">
-                    <IconBadge icon={section.icon as IconName} className="mx-auto mb-4" />
-                    <CardTitle className="text-lg font-display text-primary">
+                    <CardTitle className="text-lg font-display text-wine-palido">
                       {section.title}
                     </CardTitle>
                   </CardHeader>

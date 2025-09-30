@@ -1,7 +1,7 @@
 import { Section } from "@/components/ui/section";
 import { FadeIn } from "./FadeIn";
 import { BREAKPOINT_CLASSES, ANIMATION_DELAYS } from "@/constants";
-import heroImage from "@/assets/jose-gregorio-hero.jpg";
+import heroImage from "@/assets/jose-gregorio.jpg";
 import { colorizeJoseGregorio } from "@/lib/text-utils";
 
 export const WhoIsJGH = () => {
@@ -10,15 +10,15 @@ export const WhoIsJGH = () => {
       <div className="max-w-6xl mx-auto">
         <section aria-labelledby="quien-es-jgh-title">
           <div className={`${BREAKPOINT_CLASSES.CARD_ROUNDED} bg-card overflow-hidden`}>
-            <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-start">
+            <div className="grid md:grid-cols-2 justify-center items-center">
               {/* Image Column */}
-              <FadeIn>
+              <FadeIn className="py-12 md:py-16 px-6 md:px-10">
                 <div className="relative">
                   <div className="rounded-2xl overflow-hidden shadow-elegant">
                     <img
                       src={heroImage}
                       alt="Retrato del Dr. José Gregorio Hernández en su ministerio médico"
-                      className="w-full h-auto object-cover"
+                      className="w-full h-full max-h-[600px] object-cover object-top"
                       loading="lazy"
                     />
                   </div>

@@ -228,7 +228,7 @@ export const Contact = () => {
                         id="organization"
                         value={formData.organization}
                         onChange={handleChange("organization")}
-                        placeholder="Nombre de su institución (opcional)"
+                        placeholder="Nombre de su institución"
                         className="rounded-xl border-border/50 focus:border-ring mt-2"
                         maxLength={CONTACT_CONFIG.FORM_MAX_LENGTHS.ORGANIZATION}
                       />
@@ -241,7 +241,7 @@ export const Contact = () => {
                         id="topic"
                         value={formData.topic}
                         onChange={handleChange("topic")}
-                        placeholder="Motivo del mensaje (ej.: visita guiada, prensa)"
+                        placeholder="Motivo del mensaje"
                         className="rounded-xl border-border/50 focus:border-ring mt-2"
                         maxLength={CONTACT_CONFIG.FORM_MAX_LENGTHS.TOPIC}
                       />
