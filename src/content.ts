@@ -97,7 +97,8 @@ export const content = {
     { role: "Textos", people: ["Padre Gerardino Barracchini", "Eva Mendoza", "Valentina Sosa"] },
     { role: "Museografía y Diseño", people: ["Juan Carlos Hernández", "Eva Mendoza", "Valentina Sosa"] },
     { role: "Comunicaciones", people: ["Rubén Darío Hernández", "Juan Diego Hernández"] },
-    { role: "Planificación de Contenido", people: ["Sharon"] }
+    { role: "Planificación de Contenido", people: ["Sharon"] },
+    { role: "Desarrollo web", people: ["Jesús Freites", "Eugenio Andreone"] }
   ],
 
   // Clickable Contact

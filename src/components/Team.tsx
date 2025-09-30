@@ -39,7 +39,7 @@ export const Team = () => {
           />
         </FadeIn>
 
-        {/* Roles del equipo */}
+        {/* Roles del equipo - incluye tarjeta de Desarrollo web */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
           {deduplicatedTeam.map((teamSection, index) => (
             <FadeIn key={teamSection.role} delay={index * ANIMATION_DELAYS.ITEM_STAGGER}>
@@ -64,21 +64,6 @@ export const Team = () => {
               </Card>
             </FadeIn>
           ))}
-          
-          {/* Reserved slot for future card: "Desarrollo web — Jesús Freites y Eugenio Andreone" */}
-          <div 
-            className="hidden lg:block h-full pointer-events-none" 
-            role="presentation"
-            aria-hidden="true"
-          >
-            <Card className={`h-full ${BREAKPOINT_CLASSES.CARD_ROUNDED} border-dashed border-border/50`}>
-              <CardHeader>
-                <CardTitle className="text-lg font-display text-muted-foreground text-center leading-tight">
-                  Desarrollo web
-                </CardTitle>
-              </CardHeader>
-            </Card>
-          </div>
         </div>
 
     </Section>
