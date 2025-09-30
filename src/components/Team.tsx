@@ -68,17 +68,23 @@ export const Team = () => {
           {/* Reserved slot for future card: "Desarrollo web — Jesús Freites y Eugenio Andreone" */}
           <div 
             className="hidden lg:block h-full pointer-events-none" 
+            role="presentation"
             aria-hidden="true"
           >
-            <Card className={`h-full ${BREAKPOINT_CLASSES.CARD_ROUNDED} opacity-0`}>
+            <Card className={`h-full ${BREAKPOINT_CLASSES.CARD_ROUNDED} border-dashed border-border/50`}>
               <CardHeader>
-                <CardTitle className="text-lg font-display text-primary leading-tight">
-                  {/* Placeholder content - not rendered */}
+                <div className="flex items-center justify-center mb-2">
+                  <Code2Icon className="w-5 h-5 text-muted-foreground/30" aria-hidden="true" />
+                </div>
+                <CardTitle className="text-lg font-display text-muted-foreground text-center leading-tight">
+                  Desarrollo web
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <div className="space-y-2">
-                  {/* Placeholder content - not rendered */}
+                <div className="text-center">
+                  <p className="text-sm text-muted-foreground/70">
+                    Próximamente — Jesús Freites y Eugenio Andreone
+                  </p>
                 </div>
               </CardContent>
             </Card>
