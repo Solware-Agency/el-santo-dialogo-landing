@@ -64,6 +64,16 @@ export const Team = () => {
               </Card>
             </FadeIn>
           ))}
+          
+          {/* Reserved slot for future "Desarrollo web" card */}
+          {/* 
+            Future card: "Desarrollo web — Jesús Freites y Eugenio Andreone"
+            This slot maintains grid layout balance and prevents layout jumps
+            when the card is activated later.
+          */}
+          <div className="hidden">
+            {/* Placeholder for: Desarrollo web — Jesús Freites y Eugenio Andreone */}
+          </div>
         </div>
 
         {/* Crédito de desarrollo web */}
