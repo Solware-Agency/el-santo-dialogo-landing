@@ -65,14 +65,23 @@ export const Team = () => {
             </FadeIn>
           ))}
           
-          {/* Reserved slot for future "Desarrollo web" card */}
-          {/* 
-            Future card: "Desarrollo web — Jesús Freites y Eugenio Andreone"
-            This slot maintains grid layout balance and prevents layout jumps
-            when the card is activated later.
-          */}
-          <div className="hidden">
-            {/* Placeholder for: Desarrollo web — Jesús Freites y Eugenio Andreone */}
+          {/* Reserved slot for future card: "Desarrollo web — Jesús Freites y Eugenio Andreone" */}
+          <div 
+            className="hidden lg:block h-full pointer-events-none" 
+            aria-hidden="true"
+          >
+            <Card className={`h-full ${BREAKPOINT_CLASSES.CARD_ROUNDED} opacity-0`}>
+              <CardHeader>
+                <CardTitle className="text-lg font-display text-primary leading-tight">
+                  {/* Placeholder content - not rendered */}
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <div className="space-y-2">
+                  {/* Placeholder content - not rendered */}
+                </div>
+              </CardContent>
+            </Card>
           </div>
         </div>
 
