@@ -12,7 +12,7 @@ export const VenueDates = () => {
 			<div className="max-w-4xl mx-auto">
 				<FadeIn>
 					<SectionHeader
-						title="Información de la Exposición"
+						title="Información de la exposición"
 						subtitle="Ubicación y fechas de la muestra"
 						className="mb-12"
 					/>

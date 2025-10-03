@@ -10,7 +10,7 @@ export const ExhibitModules = () => {
     <Section id="exposicion">
         <FadeIn>
           <SectionHeader 
-            title="Un Viaje por la Exposición"
+            title="Un viaje por la exposición"
             subtitle="Descubre cada faceta de su vida a través de seis módulos inmersivos"
           />
         </FadeIn>

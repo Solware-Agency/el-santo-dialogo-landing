@@ -6,42 +6,37 @@ import { content } from "@/content";
 import { getIcon } from "@/lib/icons";
 import { BREAKPOINT_CLASSES, ANIMATION_DELAYS } from "@/constants";
 
-// De-duplicate team members at render time
-const deduplicateTeamMembers = (teamData: typeof content.team): typeof content.team => {
-  const assignedPeople = new Set<string>();
-  
+// Allow team members to appear in multiple roles as they may have multiple responsibilities
+const processTeamMembers = (teamData: typeof content.team): typeof content.team => {
   return teamData.map(teamSection => {
-    const availablePeople = teamSection.people.filter(person => {
-      if (assignedPeople.has(person)) {
-        return false; // Person already assigned to higher precedence role
-      }
-      assignedPeople.add(person);
-      return true;
-    });
+    // If no people assigned, show placeholder
+    if (teamSection.people.length === 0) {
+      return {
+        ...teamSection,
+        people: ["—"]
+      };
+    }
     
-    return {
-      ...teamSection,
-      people: availablePeople.length > 0 ? availablePeople : ["—"]
-    };
+    return teamSection;
   });
 };
 
 export const Team = () => {
-  const deduplicatedTeam = deduplicateTeamMembers(content.team);
+  const processedTeam = processTeamMembers(content.team);
   const Code2Icon = getIcon("Code2");
 
   return (
     <Section id="equipo">
         <FadeIn>
           <SectionHeader 
-            title="El Corazón del Proyecto"
+            title="El corazón del proyecto"
             subtitle="Conozca a nuestro equipo de trabajo."
           />
         </FadeIn>
 
         {/* Roles del equipo - incluye tarjeta de Desarrollo web */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
-          {deduplicatedTeam.map((teamSection, index) => (
+          {processedTeam.map((teamSection, index) => (
             <FadeIn key={teamSection.role} delay={index * ANIMATION_DELAYS.ITEM_STAGGER}>
               <Card className={`h-full ${BREAKPOINT_CLASSES.CARD_ROUNDED}`}>
                 <CardHeader>

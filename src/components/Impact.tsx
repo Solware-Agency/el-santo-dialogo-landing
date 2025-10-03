@@ -10,7 +10,7 @@ export const Impact = () => {
     <Section background="muted">
         <FadeIn>
           <SectionHeader 
-            title="Impacto de la Exposición"
+            title="Impacto de la exposición"
             subtitle={content.impact.summary}
             className="mb-12"
           />

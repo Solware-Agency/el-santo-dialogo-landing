@@ -12,8 +12,8 @@ export const LegacyBio = () => {
     <Section id="legado" background="muted">
         <FadeIn>
           <SectionHeader 
-            title="La Forja de un Santo Venezolano"
-            subtitle="Ciencia, Fe y Humanidad en perfecta armonía"
+            title="La forja de un santo venezolano"
+            subtitle="Ciencia, fe y humanidad en perfecta armonía"
           />
         </FadeIn>
 

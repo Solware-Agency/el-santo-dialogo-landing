@@ -79,7 +79,7 @@ export const content = {
 
   venueDates: {
     location: "Parroquia La Candelaria, Caracas",
-    opening: "Finales de octubre de 2025",
+    opening: "9 de octubre de 2025",
     duration: "3 meses"
   },
 
@@ -93,19 +93,20 @@ export const content = {
   },
 
   team: [
-    { role: "Producción General", people: ["Eva Mendoza", "Valentina Sosa"] },
-    { role: "Textos", people: ["Padre Gerardino Barracchini", "Eva Mendoza", "Valentina Sosa"] },
-    { role: "Museografía y Diseño", people: ["Juan Carlos Hernández", "Eva Mendoza", "Valentina Sosa"] },
-    { role: "Comunicaciones", people: ["Rubén Darío Hernández", "Juan Diego Hernández"] },
-    { role: "Planificación de Contenido", people: ["Sharon"] },
-    { role: "Desarrollo web", people: ["Jesús Freites", "Eugenio Andreone"] }
+    { role: "Producción General", people: ["Eva Mendoza", "Juan Carlos Hernández"] },
+    { role: "Textos", people: ["Padre Gerardino Barracchini", "Valentina Sosa"] },
+    { role: "Museografía", people: ["Eva Mendoza", "Valentina Sosa", "Juan Carlos Hernández"] },
+    { role: "Diseño museográfico", people: ["Juan Carlos Hernández", "Eva Mendoza"] },
+    { role: "Contenido y producción", people: ["Ideográfiko Estudio Creativo"] },
+    { role: "Coordinadora parroquial, asistente del padre", people: ["Mirian Peréz"] },
+    { role: "Desarrollo web", people: ["Jesús Freites", "Eugenio Andreone", "George Vargas"] }
   ],
 
   // Clickable Contact
   contact: {
-    whatsapp: "https://wa.me/584141234567?text=Hola,%20estoy%20interesado%20en%20la%20exposición%20de%20José%20Gregorio%20Hernández",
-    phone: "tel:+00000000000",           // will be replaced later
-    email: "mailto:info@example.com",    // will be replaced later
+    whatsapp: "https://wa.me/584141378171?text=Hola,%20estoy%20interesado%20en%20la%20exposición%20de%20José%20Gregorio%20Hernández",
+    phone: "tel:+584122533305",           // will be replaced later
+    email: "mailto:contacto@ideografiko.com",    // will be replaced later
     socials: [
       { name: "Instagram", icon: "Instagram", url: "#" },
       { name: "Facebook",  icon: "Facebook",  url: "#" },

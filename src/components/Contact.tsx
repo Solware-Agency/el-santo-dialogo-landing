@@ -95,7 +95,7 @@ export const Contact = () => {
     <Section id="contacto" background="muted">
         <FadeIn>
           <SectionHeader 
-            title="Contacto y Visitas"
+            title="Contacto y visitas"
             subtitle="Póngase en contacto con nosotros para más información"
           />
         </FadeIn>
@@ -107,7 +107,7 @@ export const Contact = () => {
               <Card className={BREAKPOINT_CLASSES.CARD_ROUNDED}>
                 <CardContent className="p-8">
                   <h3 className="text-xl font-display text-primary mb-6">
-                    Información de Contacto
+                    Información de contacto
                   </h3>
                   
                   <div className="space-y-4">
