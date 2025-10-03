@@ -13,7 +13,6 @@ export const VenueDates = () => {
 				<FadeIn>
 					<SectionHeader
 						title="Información de la exposición"
-						subtitle="Ubicación y fechas de la muestra"
 						className="mb-12"
 					/>
 				</FadeIn>
@@ -45,8 +44,8 @@ export const VenueDates = () => {
 									<div className="flex items-center justify-center lg:justify-start gap-6">
 										<IconBadge icon="MapPin" />
 										<div>
-											<h3 className="text-xl font-display text-primary mb-2 text-center lg:text-left">Ubicación</h3>
-											<p className="text-muted-foreground text-center lg:text-left">{content.venueDates.location}</p>
+											<h3 className="text-xl font-display text-primary mb-2 text-center">Ubicación</h3>
+											<p className="text-muted-foreground text-center">{content.venueDates.location}</p>
 										</div>
 									</div>
 
